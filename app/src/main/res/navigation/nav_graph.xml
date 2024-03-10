@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/spleshFragment">
+
+    <fragment
+        android:id="@+id/spleshFragment"
+        android:name="com.mansurdev.homework_691.SpleshFragment"
+        android:label="fragment_splesh"
+        tools:layout="@layout/fragment_splesh" >
+        <action
+            android:id="@+id/action_spleshFragment_to_homFragment"
+            app:destination="@id/homFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homFragment"
+        android:name="com.mansurdev.homework_691.HomFragment"
+        android:label="fragment_hom"
+        tools:layout="@layout/fragment_hom" >
+
+        <action
+            android:id="@+id/action_homFragment_to_selectedFragment"
+            app:destination="@id/selectedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settinsFragment"
+        android:name="com.mansurdev.homework_691.SettinsFragment"
+        android:label="fragment_settins"
+        tools:layout="@layout/fragment_settins" >
+        <action
+            android:id="@+id/action_settinsFragment_to_wordsFragment"
+            app:destination="@id/wordsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedFragment"
+        android:name="com.mansurdev.homework_691.SelectedFragment"
+        android:label="fragment_selected"
+        tools:layout="@layout/fragment_selected" >
+        <action
+            android:id="@+id/action_selectedFragment_to_settinsFragment"
+            app:destination="@id/settinsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordsFragment"
+        android:name="com.mansurdev.homework_691.WordsFragment"
+        android:label="fragment_words"
+        tools:layout="@layout/fragment_words" >
+        <action
+            android:id="@+id/action_wordsFragment_to_addWordFragment"
+            app:destination="@id/addWordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWordFragment"
+        android:name="com.mansurdev.homework_691.AddWordFragment"
+        android:label="fragment_add_word"
+        tools:layout="@layout/fragment_add_word" />
+    <fragment
+        android:id="@+id/editWordFragment"
+        android:name="com.mansurdev.homework_691.EditWordFragment"
+        android:label="fragment_edit_word"
+        tools:layout="@layout/fragment_edit_word" />
+</navigation>
