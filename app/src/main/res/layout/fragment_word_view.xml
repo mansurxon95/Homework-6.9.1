@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".WordViewFragment"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+      app:title="Lap top"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#FFFFFF"
+        app:titleTextColor="@color/black"
+        android:id="@+id/toolbar" />
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+   >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/btn_color_nativ"
+        android:id="@+id/image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_color_heat"
+            android:src="@drawable/favorite"
+            android:layout_margin="15dp"
+            android:id="@+id/btn_favorite"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lap top"
+        android:textColor="#272840"
+        android:textSize="24dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/word_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Noutbuk, kompyuter, yangicha elektron hisoblash mashinasi"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/word_trans"/>
+
+
+</LinearLayout>
